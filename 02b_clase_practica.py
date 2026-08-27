@@ -1,0 +1,12 @@
+nombre = input("Cual es tu nombre: ")
+apellido = input("Cual es tu apellido: ")
+edad = input("Cual es tu edad: ") 
+email = input("Cual es tu email: ")
+
+print("\n\n")
+print("---- CLIENTE N° 1 ----")
+print("Nombre: ", nombre)
+print("Apellido: ", apellido)
+print("Edad: ", edad)
+print("Email: ", email)
+print("----------------------")
