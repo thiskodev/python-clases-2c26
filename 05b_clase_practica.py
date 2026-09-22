@@ -12,20 +12,20 @@ Mostrá este resultado al final del programa.
 iteracion = 1
 max_iteracion = 3
 ingreso_total = 0
-meses = ""
 
 while iteracion <= max_iteracion:
 
-  mes = input("Ingrese el mes: ")
   ingreso = int(input("Ingreso del cliente: "))
+
+  if ingreso < 0:
+    print("El número es negativo, se ignora. Intentá de nuevo.")
+    continue  
   
   iteracion += 1
   ingreso_total += ingreso 
-  meses += f"Mes de {mes}, ${ingreso}.\n"
-  
+ 
 ingreso_prom = ingreso_total / max_iteracion
 print("\n------Ingresos ------\n")
-print(meses)
 print(f"Ingreso Promedio: ${ingreso_prom}, Igreso Total: ${ingreso_total}")
 print("\n----------")
 
