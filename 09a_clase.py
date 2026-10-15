@@ -1,11 +1,9 @@
-print("Hola")
-
-def saludar():
-  anio = 2026
-  print("Promo", anio)
 
 def saludar_completo(nombre, apellido):
-  print(f"Bienvenido/a Talento Tech, {nombre} {apellido} ")
+  print(f"Bienvenido/a Talento Tech, {nombre} {apellido}, Promo {anio()}")
 
-print("Hola 2")
-print(anio)
+def anio():
+  return 2026 + 2
+
+saludar_completo("Ana", "Perez")
+
